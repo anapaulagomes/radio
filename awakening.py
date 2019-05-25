@@ -5,7 +5,7 @@ import soundfile
 import time
 
 logging.basicConfig(
-    filename=f'logs/radio-{datetime.now().date()}.log',
+    filename='logs/radio-{}.log'.format(datetime.now().date()),
     filemode='a',
     level=logging.DEBUG,
     format='%(asctime)s %(message)s'

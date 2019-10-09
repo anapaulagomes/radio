@@ -33,9 +33,21 @@ play an inaudible sound to keep it on.
 
     python awakening.py
 
+You may need a few extra configuration to make the audio
+system work with Raspotify.
+
+Volume:
+
+    amixer set Master -- 100%
+
+Force output to Jack:
+
+    sudo raspi-config  # advanced options
+
 ## Credits
 
 * [Idea of playing an inaudible audio](https://forums.tomsguide.com/threads/prevent-speakers-standby-mode.375550/)
 * [Command to create an inaudible audio](https://ubuntuforums.org/showthread.php?t=1911430)
 * Bass Drum sample from [freewavesamples](https://freewavesamples.com/bass-drum-1)
 (for testing purposes)
+* [Ignore HDMI audio](https://github.com/dtcooper/raspotify/issues/82#issuecomment-383881443)

@@ -10,8 +10,14 @@ It can be used via audio cable, Bluetooth or Spotify.
 
 * An old radio with capacity to host a Raspberry PI and a speaker
 * Raspberry PI 3b
-* Speaker (I've been using JBL GO due to its size and sound quality)
+* Speaker (I've been using JBL GO due to its size and sound quality but I cannot recommend it)
 * Audio Jack cable
+
+## Projects
+
+* [Balena Sound](https://www.balena.io/blog/turn-your-old-speakers-or-hi-fi-into-bluetooth-receivers-using-only-a-raspberry-pi/)
+* [Volumio](https://volumio.org/)
+* [Raspotify](https://github.com/dtcooper/raspotify)
 
 ## Requirements:
 
@@ -20,12 +26,7 @@ It can be used via audio cable, Bluetooth or Spotify.
 * python-sounddevice
 * python-soundfile
 
-Optional:
-
-* [Raspotify](https://github.com/dtcooper/raspotify)
-(in order to make your radio as a Spotify Connect option)
-
-## Running
+### Running only on Raspberry Pi
 
 JBL Go will turn off after 10 min of inactivity.
 The script [awakening.py](awakening.py) will 
